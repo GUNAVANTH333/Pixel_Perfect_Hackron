@@ -10,56 +10,56 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 const recentOrders = [
   {
     id: "ORD-1234",
-    customer: "John Doe",
+    customer: "Aarav",
     items: 3,
-    total: 42.25,
+    total: 420.25,
     status: "completed",
-    packer: "Alex Johnson",
+    packer: "Rahul",
     timestamp: "2023-03-06T10:45:00",
   },
   {
     id: "ORD-1235",
-    customer: "Jane Smith",
+    customer: "Vikram",
     items: 4,
-    total: 74.99,
+    total: 299,
     status: "in-progress",
-    packer: "Sarah Williams",
+    packer: "Vivek",
     timestamp: "2023-03-06T11:15:00",
   },
   {
     id: "ORD-1236",
-    customer: "Robert Johnson",
+    customer: "Siddharth",
     items: 2,
-    total: 29.5,
+    total: 295,
     status: "pending",
     packer: null,
     timestamp: "2023-03-06T11:25:00",
   },
   {
     id: "ORD-1237",
-    customer: "Emily Davis",
+    customer: "Ayesha",
     items: 3,
-    total: 38.75,
+    total: 130.5,
     status: "in-progress",
-    packer: "Michael Brown",
+    packer: "Dev",
     timestamp: "2023-03-06T11:30:00",
   },
   {
     id: "ORD-1238",
-    customer: "William Wilson",
+    customer: "Karan",
     items: 5,
-    total: 92.3,
+    total: 653,
     status: "pending",
     packer: null,
     timestamp: "2023-03-06T11:35:00",
   },
   {
     id: "ORD-1239",
-    customer: "Olivia Martinez",
+    customer: "Arjun",
     items: 1,
-    total: 18.99,
+    total: 128.76,
     status: "completed",
-    packer: "Emily Davis",
+    packer: "Ali",
     timestamp: "2023-03-06T11:40:00",
   },
 ]
@@ -104,7 +104,7 @@ export function RecentOrdersTable() {
             <TableCell>{order.customer}</TableCell>
             <TableCell className="hidden md:table-cell">{formatTime(order.timestamp)}</TableCell>
             <TableCell className="hidden md:table-cell">{order.items}</TableCell>
-            <TableCell className="text-right">${order.total.toFixed(2)}</TableCell>
+            <TableCell className="text-right">₹{order.total.toFixed(2)}</TableCell>
             <TableCell>
               <Badge className={getStatusColor(order.status)}>
                 {order.status === "pending" ? "PENDING" : order.status === "in-progress" ? "IN PROGRESS" : "COMPLETED"}
