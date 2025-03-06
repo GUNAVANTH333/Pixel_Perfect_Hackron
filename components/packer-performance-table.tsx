@@ -12,35 +12,35 @@ type SortField = "name" | "completed" | "avgTime" | "accuracy" | null
 const packers = [
   {
     id: 1,
-    name: "Alex Johnson",
+    name: "Rahul",
     completed: 18,
     avgTime: 185, // in seconds
     accuracy: 98.5,
   },
   {
     id: 2,
-    name: "Sarah Williams",
+    name: "Vivek",
     completed: 22,
     avgTime: 162,
     accuracy: 99.2,
   },
   {
     id: 3,
-    name: "Michael Brown",
+    name: "Ali",
     completed: 15,
     avgTime: 210,
     accuracy: 97.8,
   },
   {
     id: 4,
-    name: "Emily Davis",
+    name: "Varun",
     completed: 20,
     avgTime: 175,
     accuracy: 98.9,
   },
   {
     id: 5,
-    name: "David Wilson",
+    name: "Yash",
     completed: 17,
     avgTime: 195,
     accuracy: 98.1,
